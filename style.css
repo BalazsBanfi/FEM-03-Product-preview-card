@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  body {
+    background: white;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  
