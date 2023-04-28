@@ -25,8 +25,15 @@ main {
   overflow: hidden;
 }
 
+#imgDiv {
+  width: 343px;
+  height: 240px;
+  background: url("./images/image-product-mobile.jpg");
+  background-size: contain;
+}
+
 #imgPerfume {
-  max-width: 100%;
+  width: 100%;
 }
 
 .description {
@@ -113,15 +120,24 @@ h2,
   right: 15px;
 }
 
-
 @media screen and (min-width: 750px) {
-  main {
-    width: 50%;
+  body {
+    background: hsl(30, 38%, 92%);
   }
- 
+
+  main {
+    max-width: 600px;
+  }
+
   .container {
-    max-width: 375px;
     flex-direction: row;
-    
+  }
+
+  #imgDiv {
+    min-width: 50%;
+    min-height: 425px;
+    background: url("./images/image-product-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
