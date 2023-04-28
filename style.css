@@ -27,7 +27,6 @@ main {
 
 #imgPerfume {
   max-width: 100%;
-  
 }
 
 .description {
@@ -117,10 +116,12 @@ h2,
 
 @media screen and (min-width: 750px) {
   main {
-    max-width: 750px;
+    width: 50%;
   }
  
   .container {
+    max-width: 375px;
     flex-direction: row;
+    
   }
 }
