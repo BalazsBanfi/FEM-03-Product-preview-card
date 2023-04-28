@@ -3,9 +3,8 @@
   padding: 0px;
   box-sizing: border-box;
   text-align: center;
-  font-family: "Fraunces", serif;
+  border: 1px solid red;
   font-family: "Montserrat", sans-serif;
- /* border: 1px solid red;*/
 }
 
 body {
@@ -33,5 +32,41 @@ main {
 }
 
 .description {
-    background: hsl(0, 0%, 100%);
+  background: hsl(0, 0%, 100%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.description * {
+    text-align: left;
+}
+
+.description > h1, h2, .price {
+    margin-bottom: 1rem;
+}
+
+.description > h1, .price > p {
+    font-family: "Fraunces", serif;
+}
+
+.description > h2 {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.description > h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.price > p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: inline;
+}
+
+.price > span {
+    display: inline-block;    
 }
