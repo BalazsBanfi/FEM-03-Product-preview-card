@@ -27,6 +27,7 @@ main {
 
 #imgPerfume {
   max-width: 100%;
+  
 }
 
 .description {
@@ -44,7 +45,7 @@ main {
 .description > h1,
 h2,
 .price {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .description > h1,
@@ -56,7 +57,7 @@ h2,
   font-size: 1.1rem;
   font-weight: 500;
   color: hsl(228, 12%, 48%);
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .description > h1 {
@@ -68,27 +69,27 @@ h2,
 
 .price > p {
   min-width: 50%;
-  font-size: 1.75rem;
+  font-size: 1.65rem;
   font-weight: 700;
   color: hsl(158, 36%, 37%);
   display: inline-block;
 }
 
 .price {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .price > span {
   display: inline-block;
   text-decoration: line-through;
-  color: hsl(228, 12%, 48%)
+  color: hsl(228, 12%, 48%);
 }
 
 .button {
   color: hsl(0, 0%, 100%);
-  font-size: 0.9rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 900;
   text-align: center;
   background: hsl(158, 36%, 37%);
   border-radius: 5px;
@@ -106,3 +107,20 @@ h2,
   transform: translateY(3px);
 }
 
+.button::before {
+  content: url("./images/icon-cart.svg");
+  position: relative;
+  top: 3px;
+  right: 15px;
+}
+
+
+@media screen and (min-width: 750px) {
+  main {
+    max-width: 750px;
+  }
+ 
+  .container {
+    flex-direction: row;
+  }
+}
